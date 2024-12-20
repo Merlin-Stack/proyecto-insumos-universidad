@@ -1,0 +1,198 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(252, 252, 252);
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(24, 23, 23);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table{
+    margin-top: 20px;
+    margin: 0 auto;
+    background-color: #fdfdfd;
+    width: 80%;
+    text-align: left;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td{
+    padding: 15px;
+}
+
+thead {
+    background-color: #050505;/*Color de la cabecera*/
+    border-bottom: solid 5px #f3f3f3;/*color de la linea separadora*/
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+/*color al pasar el mouse sobre el*/
+tr:hover td{
+    background-color: #a8dadc;
+    color: black;
+}
+
+input {
+    text-align: center;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #645c5d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 5px;
+}
+
+.navbar-start,
+.navbar-end {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-item {
+    margin: 0 10px;
+}
+
+.navbar-link {
+    color: #0c0b0b;
+    text-decoration: none;
+}
+
+/*Color al pasar el raton por el nav*/
+.navbar-link:hover {
+    color: #00bcd4;
+}
+
+.has-dropdown:hover .navbar-dropdown {
+    display: block;
+}
+
+.navbar-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f3f3f3;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-dropdown a {
+    color: #050505;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-dropdown a:hover {
+    background-color: #00bcd4;
+}
+
+  /* Estilos para la parte izquierda (usuario) */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+/*color del boton salir*/
+.button.is-link {
+    background-color: #004e98;
+    color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button.is-link:hover {
+    background-color: #0097a7;
+}
+.is-fluid {
+    margin-top: 100px;
+}
+/*color de los botones de acciones*/
+
+.btn1, td:visited td {
+        margin: 10px auto; 
+        background-color: #ffd166;
+        color: white;
+        padding: 10px 20px; /* Aumenta el espacio de padding aquí */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        margin-left: 10px; /* Es para dar espacio entre link*/
+}
+.btn2, td:visited td {
+    margin: 10px auto; 
+    background-color: #ffd166;
+    color: white;
+    padding: 10px 20px; /* Aumenta el espacio de padding aquí */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    margin-left: 10px; /* Es para dar espacio entre link*/
+}
+
+.btn1 a {
+    color:black; /*Color del enlace*/
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+.btn2 a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.container_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Ajusta la altura según tus necesidades */
+}
+  
+.BS {
+    display: flex;
+    align-items: center;
+  }
+  
+.form-control {
+    /* Estilos adicionales para el input si los necesitas */
+    margin-right: 5px; /* Espacio entre el input y el botón */
+    flex: 1; /* Permite que el input ocupe el espacio disponible */
+}
+
+.btn {
+    /* Estilos base para el botón */
+    padding: 10px 20px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  

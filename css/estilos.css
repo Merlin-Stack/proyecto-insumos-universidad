@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/back.png) no-repeat center top;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+/*box que contiene la info de login*/
+.login-box {
+  width: 320px;
+  height: 420px;
+  color: #ffffff;
+  backdrop-filter: blur(5em);
+  top: 50%;
+  left: 85%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+/*Imagen del login*/
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+
+/* titulo Sign up*/
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+/* boton login*/
+.login-box input {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/*Text field*/
+.login-box input[type="text"], .login-box input[type="password"] {
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+/*Text field del boton login*/
+.login-box input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+input[type="submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.botones{
+  display: flex;
+}
+
+.texto{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: xx-large;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+
+/*Color del label al presionar*/
+.login-box input[type="submit"]:hover {
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
+
+.login-box a {
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login-box a:hover {
+  color: #fff;
+}

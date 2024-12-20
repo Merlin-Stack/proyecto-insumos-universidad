@@ -1,0 +1,256 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(252, 252, 252);
+    margin: 0;
+    padding: 0;
+}
+
+table{
+    margin-top: 20px;
+    margin: 0 auto;
+    background-color: #333333;
+    width: 50%;
+    top: 25%;
+    left: 10%;
+    position: absolute;
+    text-align: left;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Cabecera donde va los titulos de cada columna*/
+th, td{
+    padding: 20px;
+    border-radius: 0%;
+    color: #ffffff;
+}
+
+thead {
+    background-color: #000000;
+    border-bottom: solid 5px #616d6a;/*color de la linea separadora*/
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #000000;
+}
+
+/*color al pasar el mouse sobre el*/
+tr:hover td{
+    background-color: #a8dadc;
+    color: black;
+}
+
+input {
+    text-align: left;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #645c5d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 5px;
+}
+
+.navbar-start,
+.navbar-end {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-item {
+    margin: 0 10px;
+}
+
+.navbar-link {
+    color: #0c0b0b;
+    text-decoration: none;
+}
+
+/*Color al pasar el raton por el nav*/
+.navbar-link:hover {
+    color: #00bcd4;
+}
+
+.has-dropdown:hover .navbar-dropdown {
+    display: block;
+}
+
+.navbar-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #f3f3f3;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-dropdown a {
+    color: #050505;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar-dropdown a:hover {
+    background-color: #00bcd4;
+}
+
+  /* Estilos para la parte izquierda (usuario) */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+/*color del boton salir*/
+.button.is-link {
+    background-color: #004e98;
+    color: #f5f5f5;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.button.is-link:hover {
+    background-color: #0097a7;
+}
+.is-fluid {
+    margin-top: 100px;
+}
+
+/* Estilos para el formulario */
+.form-container {
+    max-width: 300px;
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 17%;
+    left: 63%;
+}
+
+.form-container input {
+    width: 90%;
+    height: 40px;
+    border: 100px;
+    outline: 100px;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #ffffff;
+}
+
+label{
+    margin:5px;
+    margin-bottom: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 30%;
+
+}
+
+input[type="text"], input[type="number"] {
+    margin-right: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #fff;
+    position: relative;
+    right: 10px;
+
+}
+/*Text field del boton guardar*/
+input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #004e98;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 18px;
+    justify-content: center;
+  }
+
+/*color al pasar el mouse sobre el boton*/
+input[type="submit"]:hover {
+    cursor: pointer;
+    background: #3a6ea5;
+    color: #fff;
+  }
+/*Texto de registrar usuarios*/
+.form-container h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #00bcd4;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.form-group button:hover {
+    background-color: #0097a7;
+}
+
+.is-fluid {
+    margin-top: 100px;
+}
+
+.title {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+  
